@@ -1,0 +1,50 @@
+body{
+    background:#181818;
+ 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
+}
+#vtnFondo{
+    width:100%;
+    height:100%;
+}
+.btnNumero, #btnEliminar, #btnResultado, #btnLimpiar, #btnPunto{
+    border-radius:5px;
+    border:0px;
+    color:#cecece;
+    font-weight:bold;
+    transition:0.1s;
+    box-shadow:0px 0px 0px transparent;
+}
+
+#mensaje{
+    height:40px;
+    background:#272727;
+    color:#c4c4c4;
+}
+.btnEstilo0{
+    background:#575757;
+}
+.btnEstilo1{
+    background-color:#0095da;
+    
+}
+.btnEstilo2{
+    background-color:#b60018;
+   
+}
+.btnEstilo3{
+    background-color:#df7e00;
+   
+}
+.btnNumero:hover, #btnResultado:hover, #btnEliminar:hover, #btnLimpiar:hover, #btnPunto:hover{
+    color:#ffffff;
+}
+
+.btnNumero:active, .btnEstilo0:active, .btnEstilo1:active, .btnEstilo2:active, .btnEstilo3:active{
+   filter:brightness(120%);
+   
+}
