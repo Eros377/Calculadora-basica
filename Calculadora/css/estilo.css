@@ -1,43 +1,76 @@
-body{
-    background:#181818;
- 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    
+:root {
+    --fontSecundario: Arial, Helvetica, sans-serif;
+    --fontPrincipal:"Iceberg", sans-serif;
+    --colorPrincipal: #333;
+    --colorbtn: #8c52ff;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-weight: 400;
+    font-style: normal;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background: url(../img/background/background1.webp) repeat center center fixed;
+    background-size:cover;
+    font-family: var(--fontSecundario);
+    font-size:2rem;
+}
+.vidrio{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(2rem);  
+    -webkit-backdrop-filter: blur(2rem);
+    border: 0.1rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;     
+    box-shadow:1rem 1rem 1rem rgba(0, 0, 0, 0.8); 
+}
+#vtnCalculadora{
+    overflow: hidden;
+}
+.resultado{
+    overflow: hidden;
 }
 #vtnFondo{
     width:100%;
     height:100%;
 }
 .btnNumero, #btnEliminar, #btnResultado, #btnLimpiar, #btnPunto{
-    border-radius:5px;
-    border:0px;
+    font-family:var(--fontPrincipal);
+    border-radius:0.5rem;
+    border:0;
     color:#cecece;
-    font-weight:bold;
     transition:0.1s;
-    box-shadow:0px 0px 0px transparent;
 }
 
 #mensaje{
-    height:40px;
+    height:4rem;
     background:#272727;
     color:#c4c4c4;
 }
 .btnEstilo0{
-    background:#575757;
+    background:#2e2e2e;
 }
 .btnEstilo1{
-    background-color:#0095da;
+    background-color:rgb(0, 98, 211);
     
 }
 .btnEstilo2{
-    background-color:#b60018;
+    background-color:#df001e;
    
 }
 .btnEstilo3{
-    background-color:#df7e00;
+    background-color:#ff7300;
    
 }
 .btnNumero:hover, #btnResultado:hover, #btnEliminar:hover, #btnLimpiar:hover, #btnPunto:hover{
@@ -45,6 +78,6 @@ body{
 }
 
 .btnNumero:active, .btnEstilo0:active, .btnEstilo1:active, .btnEstilo2:active, .btnEstilo3:active{
+
    filter:brightness(120%);
-   
 }
